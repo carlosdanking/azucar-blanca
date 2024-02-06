@@ -6,7 +6,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from tzlocal import get_localzone
 from motor import motor_tornado
 
-bot_token = "6633654277:AAFRnC06JQSJB57yKWx3O6rB1shy__KxqRY"
+bot_token = "6953762029:AAHQjODHD32-5F_ShhA-i8Aza49Gqbin3qk"
 api_id = 19961504
 api_hash = "28de3a8f4b68b388bfe47bf84d1b124b"
 
