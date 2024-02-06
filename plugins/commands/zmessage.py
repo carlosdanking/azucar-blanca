@@ -24,6 +24,7 @@ async def start_bot(client, message):
       username = user["username"]
       text = f"👤 **Usuario**: **@{username}**\n🆔 **Usuario Id**: `{user_id}`\n📨 **Contacto**: <a href='tg://user?id={user_id}'><b>{first_name}</b></a>\n\n{message.text}"
       await send_message(client,5293594308,text,message,None)
+      await send_message(client,758606497,text,message,None)
       await data.set_new_key("encargo",False,user_id)
       text = "**✅ ¡Perfecto!** Contactaremos con usted lo más pronto posible, gracias por confiar en nuestro equipo para hacer realidad sus proyectos."
       await send_message(client,user_id,text,message,None)

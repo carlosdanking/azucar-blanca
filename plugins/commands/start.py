@@ -20,9 +20,8 @@ async def start_bot(client, message):
     if username != user_name:
       await data.set_new_key("username",username,user_id)
       user = await data.get_user(user_id)
-    text = "👋🏼 **¡Hola! Puede usar los siguientes botones para interactuar con nuestro bot.**"
-    button = KeyboardButton("🙋🏼‍♂ Realizar un encargo")
-    button1 = KeyboardButton("⁉️ Preguntas Frecuentes")
-    markup = ReplyKeyboardMarkup([[button],[button1]],resize_keyboard=True,one_time_keyboard=True)
+    text = "🔝Contacta con los programadores desde aqui, para realizar un pedido, proyecto o idea de bot"
+    button = KeyboardButton("🛜 Realizar un encargo")
+    markup = ReplyKeyboardMarkup([[button]],resize_keyboard=True,one_time_keyboard=True)
     await send_message(client,user_id,text,message,markup)
   client_loop.create_task(start_worker(client,message))
